@@ -1,0 +1,347 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Carousel Template · Bootstrap v5.1</title>
+    <link rel="stylesheet" href="gioi_thieu.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<!-- google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Lora:ital,wght@1,500&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+<link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.1/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#7952b3">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+
+<!-- head -->
+<div class="head">
+  <div class="cotainer-fluid">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#" style="font-size: 27px; margin-right: 150px;">Nhà Books</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- menu -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="index.html">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sach - 1.html">Sách</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="dang_ky.html">Sign up</a>
+                </li>
+                  
+                <li class="nav-item">
+                  <a class="nav-link active" href="gioi_thieu.html">About us</a>
+                </li>
+              </ul>
+
+              <!-- thanh tìm kiếm -->
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+                <button class="btn btn-outline-success" type="submit" style="margin-right: 10px">Search</button>
+              </form>
+              
+              <!-- nút giỏ hàng -->
+              <a href="gio_hang.html">
+                <button type="button" class="btn btn-outline-dark">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16" >
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                  </svg>
+                </button>
+                </a>
+
+            </div>
+          </div>
+        </nav>
+  </div>
+</div>
+
+
+
+<div style="text-align: center; margin-top: 40px; margin-bottom: 20px; font-family: 'Lobster', cursive;">
+    <h2>Sứ Mệnh Chúng Tôi</h2>
+</div>
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading" style="margin-top: 120px; margin-left: 80px; margin-bottom: 20px; ">Mang Trải Nghiệm, Tri Thức <span class="text-muted">.</span></h2>
+        <p class="lead" style="text-indent: 60px; margin-left: 20px;">Được bắt đầu bởi tinh thần dám nghĩ, dám làm và sức sáng tạo của tuổi trẻ, Nhà Books là đơn vị xuất bản tiên phong ứng dụng thiết kế trong trải nghiệm đọc đối với những dòng sách dành riêng cho thị trường Việt Nam. Ứng dụng thế mạnh là thiết kế sáng tạo trong trải nghiệm đọc kết hợp với nội dung nội địa từ những chuyên gia hàng đầu tại Việt Nam, chúng tôi đặt cho mình sứ mệnh tối ưu việc tiếp thu, ghi nhớ, ứng dụng kiến thức hiệu quả, nhanh chóng và thú vị.</p>
+      </div>
+      <div class="col-md-5">
+        <!--svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"  aria-label="Placeholder: 500x500" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"><img src="1.jpg" alt=""></text></svg-->
+        <img src="1.jpg" alt="">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading" style="margin-top: 160px;  margin-left: 200px; margin-bottom: 20px;">Là Nơi Để Nghỉ Ngơi <span class="text-muted">.</span></h2>
+        <p class="lead">Dù bạn là ai, bất kể độ tuổi, bất kể mức thu nhập như thế nào, khi đến với Nhà Books  bạn đều có thể tìm thấy thứ mình cần; và đều có một nơi chốn để thư giãn, nghỉ ngơi, chia sẻ. </p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <!--svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="2.jpg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg-->
+        <img src="2.jpg" alt="">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading" style="margin-top: 120px;  margin-left: 120px; margin-bottom: 20px;">Bởi vì sách là thế giới. <span class="text-muted"></span></h2>
+        <p class="lead" style="text-indent: 60px; margin-left: 20px;">Hiểu thời đại đang sống thông qua sách, song hành với những biến chuyển sâu sắc trong lòng xã hội bằng những hoạt động xuất bản miệt mài và quả cảm, con đường Nhã Nam đã chọn để đi sẽ còn dài. Nhiều khó khăn, thử thách đang ở phía trước. Bước qua thời kỳ sơ khai với những bài học và những kinh nghiệm đầu tiên, Nhã Nam giờ đã sẵn sàng cho một chặng đường phát triển mới. Và chúng tôi muốn hoàn thiện mình trong sự cầu thị và cẩn trọng. Tất cả vì một gia sản sách to lớn, có sức sống dài lâu, có ý nghĩa với nhiều thế hệ bạn đọc.
+             
+            
+            </p>
+      </div>
+      <div class="col-md-5">
+        <!--svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg-->
+        <img src="3.jpg" alt="" width="500" height="500" >
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+ <!--giới thiệu tv-->
+ <div style="text-align: center; margin-top: 40px; margin-bottom: 40px;margin-left: -160px; font-family: 'Lobster', cursive;">
+  <h2>Các Thành Viên</h2>
+</div>
+<div class="container marketing" style="margin:  auto; height: 200px">
+
+  <!-- Three columns of text below the carousel -->
+  <div class="row">
+    <div class="col-lg-6">
+      <h2>Lê Hoàng Nhất Sinh</h2>
+      <h7>thành viên số 1 - thực tập sinh</h7>
+      <h5>MSSV: 2033211321</h5>
+      <h7>sdt:0941824471 <br></h7>
+      <h7>mail: halocombat0802@gmail.com <br> </h7>
+      <h7>phụ trách: giới thiệu, giỏ hàng, form đăng ký</7>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-6">
+      
+
+      <h2>Nguyễn Viết Huy</h2>
+      <h7>thành viên số 2 - CEO cấp cao</h7>
+      <h5>MSSV: 2033216432</h5>
+      <h7>sdt:0369973410 <br></h7>
+      <h7>mail: v1469378h@gmail.com <br> </h7>
+      <h7>phụ trách: trang chủ, thanh toán, hiển thị sản phẩm, danh sách sách</h7>
+    </div><!-- /.col-lg-4 -->
+  </div><!-- /.row -->
+
+
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+
+
+  
+
+
+</main>
+
+
+
+
+
+
+    <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+      
+
+    <!-- Footer -->
+  <footer class="text-center text-lg-start bg-light">
+                                            
+    <!-- Section: Social media -->
+    <section
+      class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+    >
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Kết nối cùng với chúng tôi:</span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Đồ Án
+            </h6>
+            <p>
+              Bài tập lớn môn Thiết kế Web HK2 (2021-2022)
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Nội Dung
+          </h6>
+          <p>
+            <a href="index.html" class="text-decoration-none text-reset">Trang Chủ</a>
+          </p>
+          <p>
+            <a href="sach - 1.html" class="text-decoration-none text-reset">Sách</a>
+          </p>
+          <p>
+            <a href="dang_ky.html" class="text-decoration-none text-reset">Sign Up</a>
+          </p>
+          <p>
+            <a href="gioi_thieu.html" class="text-decoration-none text-reset">About Us</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Members
+            </h6>
+            <p>
+              <a href="https://www.facebook.com/dragonflys.93/" class="text-decoration-none text-reset">Nguyễn Viết Huy</a>
+            </p>
+            <p>
+              <a href="https://www.facebook.com/profile.php?id=100018940031718" class="text-decoration-none text-reset">Lê Hoàng Nhất Sinh</a>
+            </p>
+            <p>
+              <a href="#" class="text-decoration-none text-reset">Phạm Thái Minh Nhật (đã nghỉ học)</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Contact
+            </h6>
+            <p><i class="fas fa-home me-3"></i>Hóc Môn, Hồ Chí Minh, Việt Nam</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              v1469378h@gmail.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> 036 99 734 10</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      Trường Đại học Công nghiệp Thực Phẩm TP.HCM: 
+      <a class="text-reset fw-bold" href="https://hufi.edu.vn">hufi.edu.vn</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+  </body>
+</html>
