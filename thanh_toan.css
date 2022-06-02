@@ -1,0 +1,54 @@
+body {
+    background-color: whitesmoke;
+}
+.row {
+    margin-top: 25px;
+}
+
+
+.head {
+    border-bottom: 1px solid rgb(131, 131, 131);
+    box-shadow: 0 0 4px 0 ;
+}
+.navbar-brand{
+    margin-left: 30px;
+    margin-right: 150px;
+    
+    font-size: 27px;
+    font-family: 'Lobster', cursive;  
+}
+.head ul{
+    margin: auto;
+}
+.head li{
+    font-size: 22px;
+    margin-right: 7px;
+}
+
+.d-flex input {
+    border-radius: 12px;
+}
+.d-flex button {
+    color: black;
+    border-color: rgb(185, 185, 185);
+    border-radius: 12px;
+}
+.d-flex button:hover {
+    color: white;
+    background-color: lightseagreen;
+}
+.row-md{
+    margin-left: 20%;
+}
+
+.content {
+    text-align: center;
+    font-size: 21px;
+    font-family: 'Dancing Script', cursive;   
+    font-family: 'Lora', serif;
+}
+
+
+
+
+

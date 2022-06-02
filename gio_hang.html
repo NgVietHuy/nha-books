@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="gio_hang.css">
+    <title>Document</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Lora:ital,wght@1,500&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="head">
+    <div class="cotainer-fluid">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">Nhà Books</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+           <!-- menu -->
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sach - 1.html">Sách</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="dang_ky.html">Sign up</a>
+              </li>
+                
+              <li class="nav-item">
+                <a class="nav-link" href="gioi_thieu.html">About us</a>
+              </li>
+            </ul>
+
+              <!-- thanh tìm kiếm -->
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit" style="margin-right: 10px">Search</button>
+                </form>
+                    
+              <!-- nút giỏ hàng -->
+              <a href="gio_hang.html">
+                <button type="button" class="btn btn-outline-dark">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16" >
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                  </svg>
+                </button>
+                </a>
+     
+            </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+    <h2 class="text-center" style="margin-top: 40px;  font-family: 'Lobster', cursive; ">Giỏ Hàng</h2>
+    <div class="container"> 
+     <table id="cart" class="table table-hover table-condensed"> 
+      <thead> 
+       <tr> 
+        <th style="width:50%">Tên sản phẩm</th> 
+        <th style="width:10%">Giá</th> 
+        <th style="width:8%">Số lượng</th> 
+        <th style="width:22%" class="text-center">Thành tiền</th> 
+        <th style="width:10%"> </th> 
+       </tr> 
+      </thead> 
+      <tbody><tr> 
+          
+       <td data-th="Product"> 
+        <div class="row"> 
+         <div class="col-sm-4 hidden-xs"><img src="a1.jpg" alt="Hồi ký của một ông già Việt học" class="img-responsive" width="150px" height="100px">
+         </div> 
+         <div class="col-sm-8"> 
+          <h4 class="nomargin"><a href="d1.html" style="text-decoration: none; color: black">Hồi ký của một ông già Việt học</a></h4> 
+          <p></p> 
+         </div> 
+        </div> 
+       </td> 
+       <td data-th="Price">194.500 đ</td> 
+       <td data-th="Quantity"><input class="form-control text-center" value="1" type="number">
+       </td> 
+       <td data-th="Subtotal" class="text-center">194.500 đ</td> 
+       <td class="actions" data-th="">
+        
+       </td> 
+      </tr>  
+
+      
+
+       <td data-th="Product"> 
+           
+        <div class="row"> 
+         <div class="col-sm-4 hidden-xs"><img src="a2.jpg" alt="Câu Chuyện Nghệ Thuật" class="img-responsive" width="100">
+         </div> 
+         <div class="col-sm-8"> 
+          <h4 class="nomargin"><a href="d2.html" style="text-decoration: none; color: black">Câu Chuyện Nghệ Thuật</a></h4> 
+          <p></p> 
+         </div> 
+        </div> 
+       </td> 
+       <td data-th="Price">156.900 đ</td> 
+       <td data-th="Quantity"><input class="form-control text-center" value="1" type="number">
+       </td> 
+       <td data-th="Subtotal" class="text-center">156.900 đ</td> 
+       <td class="actions" data-th="">
+        
+       </td> 
+      </tr> 
+      
+
+
+      <tr> 
+       <td data-th="Product"> 
+        <div class="row"> 
+         <div class="col-sm-4 hidden-xs"><img src="a3.jpg" alt="Miền Đất Hứa - Barack Obama" class="img-responsive" width="100">
+         </div> 
+         <div class="col-sm-8"> 
+          <h4 class="nomargin"><a href="d3.html" style="text-decoration: none; color: black">Miền Đất Hứa - Barack Obama</a></h4> 
+          <p></p> 
+         </div> 
+        </div> 
+       </td> 
+       <td data-th="Price">553.000 ₫</td> 
+       <td data-th="Quantity"><input class="form-control text-center" value="1" type="number">
+       </td> 
+       <td data-th="Subtotal" class="text-center">553.000 ₫</td> 
+       <td class="actions" data-th="">
+        
+       </td> 
+      </tr> 
+      <tr> 
+
+
+
+
+      <tr> 
+       <td data-th="Product"> 
+        <div class="row"> 
+         <div class="col-sm-4 hidden-xs"><img src="a4.jpg" alt="Adolf Hitler - Chân Dung Một Trùm Phát Xít" class="img-responsive" width="100">
+         </div> 
+         <div class="col-sm-8"> 
+          <h4 class="nomargin"><a href="d4.html" style="text-decoration: none; color: black">Adolf Hitler - Chân Dung Một Trùm Phát Xít</a></h4> 
+          <p></p> 
+         </div> 
+        </div> 
+       </td> 
+       <td data-th="Price">389.000 ₫</td> 
+       <td data-th="Quantity"><input class="form-control text-center" value="1" type="number">
+       </td> 
+       <td data-th="Subtotal" class="text-center">389.000 ₫</td> 
+       <td class="actions" data-th="">
+        
+       </td> 
+      </tr> 
+
+
+
+
+      <tr> 
+       <td data-th="Product"> 
+        <div class="row"> 
+         <div class="col-sm-4 hidden-xs"><img src="a5.jpg" alt="Sản phẩm 1" class="img-responsive" width="100">
+         </div> 
+         <div class="col-sm-8"> 
+          <h4 class="nomargin"><a href="d5.html" style="text-decoration: none; color: black">Những Người Bạn Cố Đô Huế (Tập VI A - 1919)</a></h4> 
+          <p>   </p> 
+         </div> 
+        </div> 
+       </td> 
+       <td data-th="Price">150.000 đ</td> 
+       <td data-th="Quantity"><input class="form-control text-center" value="1" type="number">
+       </td> 
+       <td data-th="Subtotal" class="text-center">150.000 đ</td> 
+       <td class="actions" data-th="">
+        
+       </td> 
+      </tr> 
+       
+
+
+      <tr>
+       <td data-th="Product"> 
+        <div class="row"> 
+         <div class="col-sm-4 hidden-xs"><img src="a6.jpg" alt="Bất Phục Tùng" class="img-responsive" width="100">
+         </div> 
+         <div class="col-sm-8"> 
+          <h4 class="nomargin"><a href="d6.html" style="text-decoration: none; color: black"> Bất Phục Tùng</a></h4> 
+          <p></p> 
+         </div> 
+        </div> 
+       </td> 
+       <td data-th="Price">50.000 đ</td> 
+       <td data-th="Quantity"><input class="form-control text-center" value="1" type="number">
+       </td> 
+       <td data-th="Subtotal" class="text-center">50.000 đ</td> 
+       <td class="actions" data-th="">
+        
+       </td> 
+      </tr> 
+
+
+      
+      <tr> 
+       <td data-th="Product"> 
+        <div class="row"> 
+         <div class="col-sm-4 hidden-xs"><img src="a7.jpg" alt="Sách Một Mình Trên Đường" class="img-responsive" width="100">
+         </div> 
+         <div class="col-sm-8"> 
+          <h4 class="nomargin"><a href="d7.html" style="text-decoration: none; color: black">Sách Một Mình Trên Đường</a></h4> 
+          <p></p> 
+         </div> 
+        </div> 
+       </td> 
+       <td data-th="Price">38.000 đ</td> 
+       <td data-th="Quantity"><input class="form-control text-center" value="1" type="number">
+       </td> 
+       <td data-th="Subtotal" class="text-center">38.000 đ</td> 
+       <td class="actions" data-th="">
+        
+       </td> 
+      </tr> 
+      
+
+
+
+
+      <tr> 
+       <td data-th="Product"> 
+        <div class="row"> 
+         <div class="col-sm-4 hidden-xs"><img src="a8.jpg" alt="Ma Trận Cuộc Đời Keanu Reeves" class="img-responsive" width="100">
+         </div> 
+         <div class="col-sm-8"> 
+          <h4 class="nomargin"> <a href="d8.html" style="text-decoration: none; color: black"> Ma Trận Cuộc Đời Keanu Reeves</a></h4> 
+          <p></p> 
+         </div> 
+        </div> 
+       </td> 
+       <td data-th="Price">162.000 ₫</td> 
+       <td data-th="Quantity"><input class="form-control text-center" value="1" type="number">
+       </td> 
+       <td data-th="Subtotal" class="text-center">162.000 ₫</td> 
+       <td class="actions" data-th="">
+        
+       </td> 
+      </tr> 
+
+
+      
+
+
+      </tbody><tfoot> 
+       <tr class="visible-xs"> 
+        <!--td class="text-center"><strong>Tổng 200.000 đ</strong-->
+        </td> 
+       </tr> 
+
+
+
+       
+       <tr> 
+        <td><a href="sach - 1.html" class="btn btn-warning"><i class="fa fa-angle-left"></i> Tiếp tục mua hàng</a>
+        </td> 
+        <td colspan="2" class="hidden-xs"> </td> 
+        <td class="hidden-xs text-center"><strong>Tổng tiền 500.000 đ</strong>
+        </td> 
+        <td><a href="thanh_toan.html" class="btn btn-success btn-block">Thanh toán <i class="fa fa-angle-right"></i></a>
+        </td> 
+       </tr> 
+      </tfoot> 
+     </table>
+    </div>
+<br><br>
+
+
+    <!-- Footer -->
+  <footer class="text-center text-lg-start bg-light">
+                                            
+    <!-- Section: Social media -->
+    <section
+      class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+    >
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Kết nối cùng với chúng tôi:</span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Đồ Án
+            </h6>
+            <p>
+              Bài tập lớn môn Thiết kế Web HK2 (2021-2022)
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Nội Dung
+          </h6>
+          <p>
+            <a href="index.html" class="text-decoration-none text-reset">Trang Chủ</a>
+          </p>
+          <p>
+            <a href="sach - 1.html" class="text-decoration-none text-reset">Sách</a>
+          </p>
+          <p>
+            <a href="dang_ky.html" class="text-decoration-none text-reset">Sign Up</a>
+          </p>
+          <p>
+            <a href="gioi_thieu.html" class="text-decoration-none text-reset">About Us</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Members
+            </h6>
+            <p>
+              <a href="#" class="text-decoration-none text-reset">Nguyễn Viết Huy</a>
+            </p>
+            <p>
+              <a href="#" class="text-decoration-none text-reset">Lê Hoàng Nhất Sinh</a>
+            </p>
+            <p>
+              <a href="#" class="text-decoration-none text-reset">Phạm Thái Minh Nhật (đã nghỉ học)</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Contact
+            </h6>
+            <p><i class="fas fa-home me-3"></i>Hóc Môn, Hồ Chí Minh, Việt Nam</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              v1469378h@gmail.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> 036 99 734 10</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      Trường Đại học Công nghiệp Thực Phẩm TP.HCM: 
+      <a class="text-reset fw-bold" href="https://hufi.edu.vn">hufi.edu.vn</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+
+</body>
+</html>
